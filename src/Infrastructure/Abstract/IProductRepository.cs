@@ -7,5 +7,6 @@ namespace InventoryManagement.Infrastructure.Abstract
         Task<Product> AddAsync(Product product);
         Task<Product> GetByIdAsync(int id);
         Task<List<Product>> GetAllAsync();
+        Task<Product> UpdateAsync(Product product);
     }
 }

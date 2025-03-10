@@ -3,10 +3,11 @@ using InventoryManagement.Application.DTOs;
 
 namespace InventoryManagement.Application.Abstract
 {
-    public interface IProductService
+    public interface IProductManagementService
     {
         Task<Product> CreateProductAsync(ProductDto productDto);
         Task<ProductDto> GetProductByIdAsync(int id);
-        Task<List<ProductDto>> GetAllProductsAsync();
+        Task<List<Product>> GetAllProductsAsync();
+        Task UpdateStockAsync(int productId, int newQuantity);
     }
 }

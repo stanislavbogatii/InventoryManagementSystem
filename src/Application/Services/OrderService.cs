@@ -35,7 +35,7 @@ namespace InventoryManagement.Application.Services
                 {
                     ProductId = itemDto.ProductId,
                     Quantity = itemDto.Quantity,
-                    UnitPrice = product.Price // Берем цену из продукта
+                    UnitPrice = product.Price 
                 });
             }
 
@@ -49,10 +49,10 @@ namespace InventoryManagement.Application.Services
             return MapToDto(order);
         }
 
-        public async Task<List<OrderDto>> GetAllOrdersAsync()
+        public async Task<List<Order>> GetAllOrdersAsync()
         {
             var orders = await _orderRepository.GetAllAsync();
-            return orders.Select(MapToDto).ToList();
+            return orders;
         }
 
         private OrderDto MapToDto(Order order)

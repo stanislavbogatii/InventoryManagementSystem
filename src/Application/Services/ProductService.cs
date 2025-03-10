@@ -6,7 +6,7 @@ using InventoryManagement.Application.Factories;
 
 namespace InventoryManagement.Application.Services
 {
-    public class ProductService : IProductService
+    public class ProductService : IProductManagementService, IProductStockService
     {
         private readonly IProductRepository _repository;
 
@@ -33,10 +33,10 @@ namespace InventoryManagement.Application.Services
             return MapToDto(product);
         }
 
-        public async Task<List<ProductDto>> GetAllProductsAsync()
+        public async Task<List<Product>> GetAllProductsAsync()
         {
             var products = await _repository.GetAllAsync();
-            return products.Select(MapToDto).ToList();
+            return products;
         }
 
         private ProductDto MapToDto(Product product)
@@ -65,6 +65,13 @@ namespace InventoryManagement.Application.Services
             };
         }
 
-
+        public async Task UpdateStockAsync(int productId, int newQuantity)
+        {
+            var product = await _repository.GetByIdAsync(productId); ;
+            if (product == null) throw new Exception("Product not found");
+            product.StockQuantity = newQuantity;
+            product.LastUpdated = DateTime.UtcNow;
+            await _repository.UpdateAsync(product);
+        }
     }
 }

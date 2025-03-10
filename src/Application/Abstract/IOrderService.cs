@@ -1,4 +1,5 @@
 ﻿using InventoryManagement.Application.DTOs;
+using InventoryManagement.Core.Entities;
 
 namespace InventoryManagement.Application.Abstract
 {
@@ -6,6 +7,6 @@ namespace InventoryManagement.Application.Abstract
     {
         Task<OrderDto> CreateOrderAsync(OrderDto orderDto);
         Task<OrderDto> GetOrderByIdAsync(int id);
-        Task<List<OrderDto>> GetAllOrdersAsync();
+        Task<List<Order>> GetAllOrdersAsync();
     }
 }

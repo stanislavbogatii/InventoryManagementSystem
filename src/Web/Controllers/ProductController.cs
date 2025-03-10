@@ -10,32 +10,34 @@ namespace InventoryManagement.Web.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductService _productService;
+        private readonly IProductManagementService _productMangementService;
+        private readonly IProductStockService _productStockService;
 
-        public ProductsController(IProductService productService)
+        public ProductsController(IProductManagementService productMangementService, IProductStockService productStockService)
         {
-            _productService = productService;
+            _productMangementService = productMangementService;
+            _productStockService = productStockService;
         }
 
         [HttpPost]
         [HttpPost]
         public async Task<IActionResult> CreateProduct([FromBody] ProductDto productDto)
         {
-            var createdProduct = await _productService.CreateProductAsync(productDto);
+            var createdProduct = await _productMangementService.CreateProductAsync(productDto);
             return Ok(MapToDto(createdProduct)); 
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
         {
-            var product = await _productService.GetProductByIdAsync(id);
+            var product = await _productMangementService.GetProductByIdAsync(id);
             return product != null ? Ok(product) : NotFound();
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
-            var products = await _productService.GetAllProductsAsync();
+            var products = await _productMangementService.GetAllProductsAsync();
             return Ok(products);
         }
 

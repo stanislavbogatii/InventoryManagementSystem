@@ -29,5 +29,21 @@ namespace InventoryManagement.Infrastructure.Repositories
         {
             return await _context.Products.ToListAsync();
         }
+
+        public async Task<Product> UpdateAsync(Product product)
+        {
+            var existingProduct = await _context.Products.FindAsync(product.Id);
+            if (existingProduct == null)
+            {
+                throw new Exception("Product not found");
+            }
+
+            _context.Entry(existingProduct).CurrentValues.SetValues(product);
+            existingProduct.LastUpdated = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+
+            return existingProduct;
+        }
     }
 }

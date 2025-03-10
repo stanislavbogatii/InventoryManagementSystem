@@ -152,3 +152,5 @@ C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Web\ob
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Web\obj\Debug\net9.0\InventoryManagement.Web.pdb
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Web\obj\Debug\net9.0\InventoryManagement.Web.genruntimeconfig.cache
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Web\obj\Debug\net9.0\ref\InventoryManagement.Web.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Web\obj\Debug\net9.0\InventoryManagement.Web.sourcelink.json
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

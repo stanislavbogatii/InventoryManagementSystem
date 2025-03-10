@@ -1,7 +1,9 @@
 ﻿
+using InventoryManagement.Core.Abstract;
+
 namespace InventoryManagement.Core.Entities
 {
-    public abstract class Product
+    public abstract class Product : IDiscountable
     {
         public int Id { get; set; }
         public string Name { get; set; }

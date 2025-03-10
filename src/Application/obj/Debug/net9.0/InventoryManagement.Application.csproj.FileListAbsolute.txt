@@ -15,3 +15,4 @@ C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Applic
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Application\obj\Debug\net9.0\refint\InventoryManagement.Application.dll
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Application\obj\Debug\net9.0\InventoryManagement.Application.pdb
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Application\obj\Debug\net9.0\ref\InventoryManagement.Application.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Application\obj\Debug\net9.0\InventoryManagement.Application.sourcelink.json
