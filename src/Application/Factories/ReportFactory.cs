@@ -4,26 +4,25 @@ using InventoryManagement.Core.Entities;
 
 namespace InventoryManagement.Application.Factories
 {
-    namespace InventoryManagement.Application.Factories
-    {
         public abstract class ReportFactory
         {
-            public abstract Report CreateReport();
+            public abstract Report CreateInventoryReport(List<Product> products);
+            public abstract Report CreateOrderReport(List<Order> orders);
+
             public abstract IReportFormatter CreateFormatter();
         }
 
-        public class InventoryPdfReportFactory : ReportFactory
+        public class PdfReportFactory : ReportFactory
         {
-            private readonly List<Product> _products;
 
-            public InventoryPdfReportFactory(List<Product> products)
+            public override Report CreateInventoryReport(List<Product> products)
             {
-                _products = products;
+                return new InventoryPdfReport(products);
             }
 
-            public override Report CreateReport()
+            public override Report CreateOrderReport(List<Order> orders)
             {
-                return new InventoryReport(_products);
+                return new OrderPdfReport(orders);
             }
 
             public override IReportFormatter CreateFormatter()
@@ -32,24 +31,21 @@ namespace InventoryManagement.Application.Factories
             }
         }
 
-        public class OrderExcelReportFactory : ReportFactory
+        public class ExcelReportFactory : ReportFactory
         {
-            private readonly List<Order> _orders;
-
-            public OrderExcelReportFactory(List<Order> orders)
+            public override Report CreateInventoryReport(List<Product> products)
             {
-                _orders = orders;
+                return new InventoryExcelReport(products);
             }
 
-            public override Report CreateReport()
+            public override Report CreateOrderReport(List<Order> orders)
             {
-                return new OrderReport(_orders);
+                return new OrderExcelReport(orders);
             }
 
-            public override IReportFormatter CreateFormatter()
+        public override IReportFormatter CreateFormatter()
             {
                 return new ExcelFormatter();
             }
         }
-    }
 }

@@ -13,7 +13,7 @@ namespace InventoryManagement.Core.Entities
         {
             public string Format(Report report)
             {
-                return $"PDF Format\nTitle: {report.Title}\nContent:\n{report.GenerateContent()}";
+                return $"PDF Format\nTitle: {report.Title}\nContent:\n";
             }
         }
 
@@ -21,7 +21,7 @@ namespace InventoryManagement.Core.Entities
         {
             public string Format(Report report)
             {
-                return $"Excel Format\nTitle: {report.Title}\nContent:\n{report.GenerateContent().Replace("\n", ";")}";
+                return $"Excel Format\nTitle: {report.Title}\nContent:\n";
             }
         }
 }

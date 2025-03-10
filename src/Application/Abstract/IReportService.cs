@@ -8,6 +8,8 @@ namespace InventoryManagement.Application.Abstract
 {
     public interface IReportService
     {
-        Task<string> GenerateReportAsync(string reportType, string format);
+        Task<string> GenerateInventoryReportAsync(string format);
+        Task<string> GenerateOrderReportAsync(string format);
+
     }
 }

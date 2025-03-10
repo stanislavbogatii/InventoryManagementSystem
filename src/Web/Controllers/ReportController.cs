@@ -15,9 +15,16 @@ namespace InventoryManagement.Web.Controllers
         }
 
         [HttpGet("generate")]
-        public async Task<IActionResult> GenerateReport([FromQuery] string reportType, [FromQuery] string format)
+        public async Task<IActionResult> GenerateOrderReport([FromQuery] string format)
         {
-            var reportContent = await _reportService.GenerateReportAsync(reportType, format);
+            var reportContent = await _reportService.GenerateOrderReportAsync(format);
+            return Ok(reportContent);
+        }
+
+        [HttpGet("generate")]
+        public async Task<IActionResult> GenerateInventoryReport([FromQuery] string format)
+        {
+            var reportContent = await _reportService.GenerateInventoryReportAsync(format);
             return Ok(reportContent);
         }
     }
