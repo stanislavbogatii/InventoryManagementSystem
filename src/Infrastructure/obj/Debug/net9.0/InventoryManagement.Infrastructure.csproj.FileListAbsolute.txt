@@ -1,0 +1,17 @@
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.AssemblyInfo.cs
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\bin\Debug\net9.0\InventoryManagement.Infrastructure.deps.json
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\bin\Debug\net9.0\InventoryManagement.Infrastructure.runtimeconfig.json
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\bin\Debug\net9.0\InventoryManagement.Infrastructure.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\bin\Debug\net9.0\InventoryManagement.Infrastructure.pdb
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\bin\Debug\net9.0\InventoryManagement.Core.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\bin\Debug\net9.0\InventoryManagement.Core.pdb
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\Inventor.D66612EB.Up2Date
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\refint\InventoryManagement.Infrastructure.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.pdb
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\InventoryManagement.Infrastructure.genruntimeconfig.cache
+C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Infrastructure\obj\Debug\net9.0\ref\InventoryManagement.Infrastructure.dll
