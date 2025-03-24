@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "orderDto",
-        "Type": "InventoryManagement.Application.DTOs.OrderDto",
+        "Type": "InventoryManagement.Core.DTOs.OrderDto",
         "IsRequired": true
       }
     ],
@@ -51,7 +51,7 @@
     "Parameters": [
       {
         "Name": "productDto",
-        "Type": "InventoryManagement.Application.DTOs.ProductDto",
+        "Type": "InventoryManagement.Core.DTOs.ProductDto",
         "IsRequired": true
       }
     ],
@@ -111,6 +111,53 @@
         "Name": "format",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventoryManagement.Web.Controllers.WarehouseController",
+    "Method": "CreateWarehouse",
+    "RelativePath": "api/Warehouse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "InventoryManagement.Core.DTOs.WarehouseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventoryManagement.Web.Controllers.WarehouseController",
+    "Method": "GetAllWarehouses",
+    "RelativePath": "api/Warehouse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InventoryManagement.Web.Controllers.WarehouseController",
+    "Method": "CreateWarehouseByPrototype",
+    "RelativePath": "api/Warehouse/create-by-prototype",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prototypeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "InventoryManagement.Core.DTOs.WarehouseDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

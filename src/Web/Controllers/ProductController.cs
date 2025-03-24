@@ -1,6 +1,6 @@
 ﻿// src/Web/Controllers/ProductsController.cs
 using InventoryManagement.Application.Abstract;
-using InventoryManagement.Application.DTOs;
+using InventoryManagement.Core.DTOs;
 using InventoryManagement.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,7 +19,6 @@ namespace InventoryManagement.Web.Controllers
             _productStockService = productStockService;
         }
 
-        [HttpPost]
         [HttpPost]
         public async Task<IActionResult> CreateProduct([FromBody] ProductDto productDto)
         {

@@ -1,7 +1,7 @@
 ﻿using InventoryManagement.Application.Abstract;
 using InventoryManagement.Core.Entities;
 using InventoryManagement.Infrastructure.Abstract;
-using InventoryManagement.Application.DTOs;
+using InventoryManagement.Core.DTOs;
 using InventoryManagement.Application.Factories;
 
 namespace InventoryManagement.Application.Services

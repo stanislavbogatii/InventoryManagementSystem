@@ -1,5 +1,5 @@
 ﻿using InventoryManagement.Core.Entities;
-using InventoryManagement.Application.DTOs;
+using InventoryManagement.Core.DTOs;
 
 namespace InventoryManagement.Application.Factories
 {
