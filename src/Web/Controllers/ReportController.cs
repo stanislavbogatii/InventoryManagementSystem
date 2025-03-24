@@ -14,14 +14,14 @@ namespace InventoryManagement.Web.Controllers
             _reportService = reportService;
         }
 
-        [HttpGet("generate")]
+        [HttpGet("generate/order")]
         public async Task<IActionResult> GenerateOrderReport([FromQuery] string format)
         {
             var reportContent = await _reportService.GenerateOrderReportAsync(format);
             return Ok(reportContent);
         }
 
-        [HttpGet("generate")]
+        [HttpGet("generate/inventory")]
         public async Task<IActionResult> GenerateInventoryReport([FromQuery] string format)
         {
             var reportContent = await _reportService.GenerateInventoryReportAsync(format);

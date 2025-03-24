@@ -1,4 +1,4 @@
-﻿using InventoryManagement.Application.DTOs;
+﻿using InventoryManagement.Core.DTOs;
 using InventoryManagement.Core.Entities;
 
 namespace InventoryManagement.Application.Abstract

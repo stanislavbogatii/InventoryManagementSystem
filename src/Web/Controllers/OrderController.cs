@@ -1,6 +1,6 @@
 ﻿// src/Web/Controllers/OrdersController.cs
 using InventoryManagement.Application.Abstract;
-using InventoryManagement.Application.DTOs;
+using InventoryManagement.Core.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Web.Controllers

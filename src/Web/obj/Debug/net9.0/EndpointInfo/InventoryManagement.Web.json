@@ -134,19 +134,33 @@
         }
       }
     },
-    "/api/Reports/generate": {
+    "/api/Reports/generate/order": {
       "get": {
         "tags": [
           "Reports"
         ],
         "parameters": [
           {
-            "name": "reportType",
+            "name": "format",
             "in": "query",
             "schema": {
               "type": "string"
             }
-          },
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Reports/generate/inventory": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
           {
             "name": "format",
             "in": "query",

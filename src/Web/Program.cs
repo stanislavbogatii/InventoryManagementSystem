@@ -8,7 +8,6 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Добавление сервисов в DI
 builder.Services.AddControllers();
 builder.Services.AddDbContext<InventoryDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -16,9 +15,10 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductManagementService, ProductService>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddSingleton<ICustomLogger, CustomLogger>();
+
 builder.Services.AddScoped<IReportService, ReportService>();
 
-// Добавление Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -32,11 +32,9 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-// Настройка pipeline
 app.UseHttpsRedirection();
 app.UseAuthorization();
 
-// Подключение Swagger
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
