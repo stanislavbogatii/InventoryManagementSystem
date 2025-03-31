@@ -17,6 +17,26 @@ namespace InventoryManagement.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.0-preview.1.24081.2");
 
+            modelBuilder.Entity("InventoryManagement.Core.Entities.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("ParentCategoryId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ParentCategoryId");
+
+                    b.ToTable("Categories");
+                });
+
             modelBuilder.Entity("InventoryManagement.Core.Entities.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -71,6 +91,9 @@ namespace InventoryManagement.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<DateTime>("LastUpdated")
                         .HasColumnType("TEXT");
 
@@ -90,6 +113,8 @@ namespace InventoryManagement.Infrastructure.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
 
@@ -143,6 +168,15 @@ namespace InventoryManagement.Infrastructure.Migrations
                     b.HasDiscriminator().HasValue("Food");
                 });
 
+            modelBuilder.Entity("InventoryManagement.Core.Entities.Category", b =>
+                {
+                    b.HasOne("InventoryManagement.Core.Entities.Category", "ParentCategory")
+                        .WithMany()
+                        .HasForeignKey("ParentCategoryId");
+
+                    b.Navigation("ParentCategory");
+                });
+
             modelBuilder.Entity("InventoryManagement.Core.Entities.OrderItem", b =>
                 {
                     b.HasOne("InventoryManagement.Core.Entities.Order", "Order")
@@ -160,6 +194,22 @@ namespace InventoryManagement.Infrastructure.Migrations
                     b.Navigation("Order");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("InventoryManagement.Core.Entities.Product", b =>
+                {
+                    b.HasOne("InventoryManagement.Core.Entities.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("InventoryManagement.Core.Entities.Category", b =>
+                {
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("InventoryManagement.Core.Entities.Order", b =>

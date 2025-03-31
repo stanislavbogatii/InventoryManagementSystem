@@ -10,6 +10,8 @@ namespace InventoryManagement.Core.Entities
         public decimal Price { get; set; }
         public int StockQuantity { get; set; }
         public DateTime LastUpdated { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
         public Product(string name, decimal price, int stockQuantity)
         {
             Name = name;

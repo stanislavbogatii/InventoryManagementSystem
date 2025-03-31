@@ -7,6 +7,8 @@ namespace InventoryManagement.Infrastructure
     public class InventoryDbContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Warehouse> Warehouses { get; set; }
@@ -18,6 +20,16 @@ namespace InventoryManagement.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            modelBuilder.Entity<Category>()
+                .HasMany(c => c.Products)
+                .WithOne(p => p.Category)
+                .HasForeignKey(p => p.CategoryId);
+
+            modelBuilder.Entity<Category>()
+                .HasOne(c => c.ParentCategory)
+                .WithMany()
+                .HasForeignKey(c => c.ParentCategoryId);
 
             modelBuilder.Entity<Product>()
                 .HasDiscriminator<string>("ProductType")

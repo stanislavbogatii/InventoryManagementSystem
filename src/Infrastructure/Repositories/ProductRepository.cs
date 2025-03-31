@@ -45,5 +45,10 @@ namespace InventoryManagement.Infrastructure.Repositories
 
             return existingProduct;
         }
+
+        public async Task<List<Product>> GetProductsByCategoryId(int categoryId)
+        {
+            return await _context.Products.Where(p => p.CategoryId == categoryId).ToListAsync();
+        }
     }
 }
