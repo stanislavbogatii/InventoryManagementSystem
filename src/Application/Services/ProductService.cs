@@ -3,16 +3,22 @@ using InventoryManagement.Core.Entities;
 using InventoryManagement.Infrastructure.Abstract;
 using InventoryManagement.Core.DTOs;
 using InventoryManagement.Application.Factories;
+using Microsoft.Extensions.Logging;
+using InventoryManagement.Core.Enums;
+using InventoryManagement.Infrastructure.Adapters;
+using InventoryManagement.Infrastructure.Services;
 
 namespace InventoryManagement.Application.Services
 {
     public class ProductService : IProductManagementService, IProductStockService
     {
         private readonly IProductRepository _repository;
+        private readonly ICustomLogger _logger;
 
-        public ProductService(IProductRepository repository)
+        public ProductService(IProductRepository repository, ICustomLogger _customLogger)
         {
             _repository = repository;
+            _logger = _customLogger;
         }
 
         public async Task<Product> CreateProductAsync(ProductDto productDto)
@@ -24,6 +30,16 @@ namespace InventoryManagement.Application.Services
                 _ => throw new ArgumentException("Invalid product type")
             };
             Product product = factory.CreateProduct(productDto);
+            _logger.Log("Product created", LogType.Info);
+
+            FileLogger fileLogger = new FileLogger();
+            ICustomLogger fileLoggerAdapter = new FileLoggerAdapter(fileLogger);
+            ICustomLogger[] loggers = { _logger, fileLoggerAdapter };
+
+            foreach (ICustomLogger logger in loggers)
+            {
+                logger.Log("Product created", LogType.Info);
+            }
             return await _repository.AddAsync(product);
         }
 
@@ -53,6 +69,7 @@ namespace InventoryManagement.Application.Services
                     ProductType = "Electronics",
                     WarrantyPeriod = electronics.WarrantyPeriod
                 },
+
                 FoodProduct food => new ProductDto
                 {
                     Name = food.Name,
