@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\components\\categorycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\components\\categorycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\facades\\orderfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\facades\\orderfacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|solutionrelative:src\\core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|solutionrelative:src\\core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\components\\productcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\components\\productcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\components\\categorycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\components\\categorycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\components\\inventorycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\components\\inventorycomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\abstract\\icategorymanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CE0204B-DE07-4991-BEC0-99DD772127CA}|src\\Infrastructure\\InventoryManagement.Infrastructure.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,14 +107,6 @@
       "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|solutionrelative:src\\core\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1CE0204B-DE07-4991-BEC0-99DD772127CA}|src\\Infrastructure\\InventoryManagement.Infrastructure.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\infrastructure\\abstract\\icustomlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CE0204B-DE07-4991-BEC0-99DD772127CA}|src\\Infrastructure\\InventoryManagement.Infrastructure.csproj|solutionrelative:src\\infrastructure\\abstract\\icustomlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -103,24 +127,12 @@
       "RelativeMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|solutionrelative:src\\core\\entities\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\controllers\\warehousecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\core\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|solutionrelative:src\\core\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6C6F0A8-76F5-4B95-92A3-4F6EC92290C4}|src\\Core\\InventoryManagement.Core.csproj|solutionrelative:src\\core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1CE0204B-DE07-4991-BEC0-99DD772127CA}|src\\Infrastructure\\InventoryManagement.Infrastructure.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\infrastructure\\migrations\\20250324192415_updateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1DFD0BFF-2224-47A4-889A-061ECE1AAC72}|src\\Web\\InventoryManagement.Web.csproj|solutionrelative:src\\web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\abstract\\iproductmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|solutionrelative:src\\application\\abstract\\iproductmanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C579709-4ACB-4D0E-8535-A8C882822F9B}|src\\Application\\InventoryManagement.Application.csproj|c:\\users\\stanislav\\documents\\c3s2\\tmpp\\lab1\\inventorymanagementsystem\\src\\application\\factories\\productfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -207,27 +215,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoryComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\CategoryComponent.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Components\\CategoryComponent.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\CategoryComponent.cs",
-              "RelativeToolTip": "src\\Application\\Components\\CategoryComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "OrderFacade.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Facades\\OrderFacade.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Facades\\OrderFacade.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Facades\\OrderFacade.cs",
+              "RelativeToolTip": "src\\Application\\Facades\\OrderFacade.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T22:04:20.121Z",
+              "WhenOpened": "2025-03-31T23:37:57.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ICategoryComposite.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\ICategoryComposite.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Abstract\\ICategoryComposite.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\ICategoryComposite.cs",
-              "RelativeToolTip": "src\\Application\\Abstract\\ICategoryComposite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T22:00:47.256Z",
+              "WhenOpened": "2025-03-31T23:21:36.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAewBwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T11:12:56.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "src\\Core\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Order.cs",
+              "RelativeToolTip": "src\\Core\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T11:53:44.3Z",
               "EditorCaption": ""
             },
             {
@@ -238,27 +271,92 @@
               "RelativeDocumentMoniker": "src\\Web\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "src\\Web\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T21:57:50.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Services\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\CategoryService.cs",
-              "RelativeToolTip": "src\\Application\\Services\\CategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "src\\Web\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "src\\Web\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T21:34:39.414Z",
+              "WhenOpened": "2025-03-10T12:15:31.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
+              "Title": "WarehouseController.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\WarehouseController.cs",
+              "RelativeDocumentMoniker": "src\\Web\\Controllers\\WarehouseController.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\WarehouseController.cs",
+              "RelativeToolTip": "src\\Web\\Controllers\\WarehouseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T19:06:50.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Program.cs",
+              "RelativeToolTip": "src\\Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T17:41:34.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\CategoryComponent.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Components\\CategoryComponent.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\CategoryComponent.cs",
+              "RelativeToolTip": "src\\Application\\Components\\CategoryComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:04:20.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InventoryComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\InventoryComponent.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Components\\InventoryComponent.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\InventoryComponent.cs",
+              "RelativeToolTip": "src\\Application\\Components\\InventoryComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:11:56.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\ProductComponent.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Components\\ProductComponent.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Components\\ProductComponent.cs",
+              "RelativeToolTip": "src\\Application\\Components\\ProductComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:15:54.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Repositories\\OrderRepository.cs",
@@ -266,38 +364,48 @@
               "RelativeToolTip": "src\\Infrastructure\\Repositories\\OrderRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:13:30.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T12:13:30.826Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\OrderService.cs",
-              "RelativeToolTip": "src\\Application\\Services\\OrderService.cs",
-              "ViewState": "AgIAABgAAADAzczMzIwiwCwAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\CategoryService.cs",
+              "RelativeToolTip": "src\\Application\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:27:35.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T21:34:39.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\ProductService.cs",
-              "RelativeToolTip": "src\\Application\\Services\\ProductService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAewBwAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\DTOs\\ProductDto.cs",
+              "RelativeDocumentMoniker": "src\\Core\\DTOs\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\DTOs\\ProductDto.cs",
+              "RelativeToolTip": "src\\Core\\DTOs\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:12:56.041Z",
+              "WhenOpened": "2025-03-24T20:13:27.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
+              "Title": "ICategoryComposite.cs",
+              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\ICategoryComposite.cs",
+              "RelativeDocumentMoniker": "src\\Application\\Abstract\\ICategoryComposite.cs",
+              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\ICategoryComposite.cs",
+              "RelativeToolTip": "src\\Application\\Abstract\\ICategoryComposite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:00:47.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ICategoryManagement.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\ICategoryManagement.cs",
               "RelativeDocumentMoniker": "src\\Application\\Abstract\\ICategoryManagement.cs",
@@ -305,12 +413,11 @@
               "RelativeToolTip": "src\\Application\\Abstract\\ICategoryManagement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T21:36:51.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T21:36:51.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\IOrderService.cs",
               "RelativeDocumentMoniker": "src\\Application\\Abstract\\IOrderService.cs",
@@ -318,12 +425,11 @@
               "RelativeToolTip": "src\\Application\\Abstract\\IOrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T21:37:32.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T21:37:32.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "IInventoryComponent.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\IInventoryComponent.cs",
               "RelativeDocumentMoniker": "src\\Application\\Abstract\\IInventoryComponent.cs",
@@ -331,48 +437,11 @@
               "RelativeToolTip": "src\\Application\\Abstract\\IInventoryComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T21:27:10.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T21:27:10.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "WarehouseController.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\WarehouseController.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Controllers\\WarehouseController.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\WarehouseController.cs",
-              "RelativeToolTip": "src\\Web\\Controllers\\WarehouseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T19:06:50.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Program.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Program.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Program.cs",
-              "RelativeToolTip": "src\\Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T17:41:34.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\DTOs\\ProductDto.cs",
-              "RelativeDocumentMoniker": "src\\Core\\DTOs\\ProductDto.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\DTOs\\ProductDto.cs",
-              "RelativeToolTip": "src\\Core\\DTOs\\ProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:13:27.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "Warehouse.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Warehouse.cs",
               "RelativeDocumentMoniker": "src\\Core\\Entities\\Warehouse.cs",
@@ -380,12 +449,11 @@
               "RelativeToolTip": "src\\Core\\Entities\\Warehouse.cs",
               "ViewState": "AgIAAAUAAACQAAAAAIA5wBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:24:17.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T20:24:17.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "Formatter.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Formatter.cs",
               "RelativeDocumentMoniker": "src\\Core\\Entities\\Formatter.cs",
@@ -393,12 +461,11 @@
               "RelativeToolTip": "src\\Core\\Entities\\Formatter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T19:11:03.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T19:11:03.923Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "src\\Core\\Entities\\Product.cs",
@@ -411,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "FileLoggerAdapter.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Adapters\\FileLoggerAdapter.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Adapters\\FileLoggerAdapter.cs",
@@ -419,12 +486,11 @@
               "RelativeToolTip": "src\\Infrastructure\\Adapters\\FileLoggerAdapter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T20:21:43.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T20:21:43.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "src\\Web\\Controllers\\ProductController.cs",
@@ -436,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "CustomLogger.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Services\\CustomLogger.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Services\\CustomLogger.cs",
@@ -448,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "FileLogger.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Services\\FileLogger.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Services\\FileLogger.cs",
@@ -460,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "log.txt",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\log.txt",
               "RelativeDocumentMoniker": "src\\Web\\log.txt",
@@ -472,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "WarehouseService.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Services\\WarehouseService.cs",
               "RelativeDocumentMoniker": "src\\Application\\Services\\WarehouseService.cs",
@@ -484,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "IPrototype.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\IPrototype.cs",
               "RelativeDocumentMoniker": "src\\Core\\Entities\\IPrototype.cs",
@@ -496,19 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "src\\Web\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "src\\Web\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T12:15:31.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "ICustomLogger.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Abstract\\ICustomLogger.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Abstract\\ICustomLogger.cs",
@@ -520,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "OrderBuilder.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Builders\\OrderBuilder.cs",
               "RelativeDocumentMoniker": "src\\Core\\Builders\\OrderBuilder.cs",
@@ -532,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "20250324192415_UpdateOrder.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Migrations\\20250324192415_UpdateOrder.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Migrations\\20250324192415_UpdateOrder.cs",
@@ -544,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\appsettings.json",
               "RelativeDocumentMoniker": "src\\Web\\appsettings.json",
@@ -556,19 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Order.cs",
-              "RelativeDocumentMoniker": "src\\Core\\Entities\\Order.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Order.cs",
-              "RelativeToolTip": "src\\Core\\Entities\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:53:44.3Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "OrderDto.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\DTOs\\OrderDto.cs",
               "RelativeDocumentMoniker": "src\\Core\\DTOs\\OrderDto.cs",
@@ -580,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "src\\Web\\Controllers\\ReportController.cs",
@@ -592,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Entities\\Report.cs",
               "RelativeDocumentMoniker": "src\\Core\\Entities\\Report.cs",
@@ -604,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "ProductFactory.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Factories\\ProductFactory.cs",
               "RelativeDocumentMoniker": "src\\Application\\Factories\\ProductFactory.cs",
@@ -616,19 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IProductManagementService.cs",
-              "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\IProductManagementService.cs",
-              "RelativeDocumentMoniker": "src\\Application\\Abstract\\IProductManagementService.cs",
-              "ToolTip": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\IProductManagementService.cs",
-              "RelativeToolTip": "src\\Application\\Abstract\\IProductManagementService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T11:12:23.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "InventoryDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Migrations\\InventoryDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Migrations\\InventoryDbContextModelSnapshot.cs",
@@ -640,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "20250324185922_AddWarehouse.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Migrations\\20250324185922_AddWarehouse.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Migrations\\20250324185922_AddWarehouse.cs",
@@ -652,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "20250310112238_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Migrations\\20250310112238_InitialCreate.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Migrations\\20250310112238_InitialCreate.cs",
@@ -665,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "20250310122954_AddItemsAssign.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Migrations\\20250310122954_AddItemsAssign.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Migrations\\20250310122954_AddItemsAssign.cs",
@@ -677,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "WarehouseRepository.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\Repositories\\WarehouseRepository.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Repositories\\WarehouseRepository.cs",
@@ -689,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "InventoryManagement.Core.csproj",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj",
               "RelativeDocumentMoniker": "src\\Core\\InventoryManagement.Core.csproj",
@@ -701,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "IProductStockService.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\Abstract\\IProductStockService.cs",
               "RelativeDocumentMoniker": "src\\Application\\Abstract\\IProductStockService.cs",
@@ -713,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "OrderStatus.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Enums\\OrderStatus.cs",
               "RelativeDocumentMoniker": "src\\Core\\Enums\\OrderStatus.cs",
@@ -725,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "IDiscountable.cs",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\Abstract\\IDiscountable.cs",
               "RelativeDocumentMoniker": "src\\Core\\Abstract\\IDiscountable.cs",
@@ -733,12 +763,11 @@
               "RelativeToolTip": "src\\Core\\Abstract\\IDiscountable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T18:39:32.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T18:39:32.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "InventoryManagement.Web.csproj",
               "DocumentMoniker": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\InventoryManagement.Web.csproj",
               "RelativeDocumentMoniker": "src\\Web\\InventoryManagement.Web.csproj",

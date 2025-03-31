@@ -6,7 +6,7 @@
     "version": "v1"
   },
   "paths": {
-    "/warehouse/{id}": {
+    "/api/Category/warehouse/{id}": {
       "get": {
         "tags": [
           "Category"
@@ -366,6 +366,11 @@
           "stockQuantity": {
             "type": "integer",
             "format": "int32"
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           },
           "productType": {
             "type": "string",

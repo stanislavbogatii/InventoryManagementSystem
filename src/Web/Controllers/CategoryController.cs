@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Web.Controllers
 {
-    [ApiController]
     [Route("api/[controller]")]
+    [ApiController]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryComposite _categoryComposite;
@@ -14,7 +14,7 @@ namespace InventoryManagement.Web.Controllers
             _categoryComposite = categoryComposite;
         }
 
-        [HttpGet("/warehouse/{id}")]
+        [HttpGet("warehouse/{id}")]
         public ActionResult GetWarehouseByCategory(int id)
         {
             var warehouse = _categoryComposite.Composite(id);
