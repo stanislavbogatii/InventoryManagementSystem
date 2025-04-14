@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8mIHhSzvWZY=",
+  "dgSpecHash": "n9e+Pp/uhWs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj",
+  "projectFilePath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stanislav\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.0-preview.1.24081.2\\microsoft.data.sqlite.core.9.0.0-preview.1.24081.2.nupkg.sha512",
     "C:\\Users\\Stanislav\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.1.24081.2\\microsoft.entityframeworkcore.9.0.0-preview.1.24081.2.nupkg.sha512",

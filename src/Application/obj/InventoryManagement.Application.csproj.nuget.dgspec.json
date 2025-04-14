@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj": {}
+    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj": {
+    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj",
         "projectName": "InventoryManagement.Application",
-        "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj",
+        "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Application\\InventoryManagement.Application.csproj",
         "packagesPath": "C:\\Users\\Stanislav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj": {
-                "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj"
+              "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj": {
+                "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj"
               },
-              "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj"
+              "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj": {
+    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj",
         "projectName": "InventoryManagement.Core",
-        "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj",
+        "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj",
         "packagesPath": "C:\\Users\\Stanislav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\obj\\",
+        "outputPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj": {
+    "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj",
         "projectName": "InventoryManagement.Infrastructure",
-        "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Infrastructure\\InventoryManagement.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Stanislav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,8 +169,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj": {
-                "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj"
+              "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj": {
+                "projectPath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Core\\InventoryManagement.Core.csproj"
               }
             }
           }

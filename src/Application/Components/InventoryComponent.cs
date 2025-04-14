@@ -1,6 +1,4 @@
-﻿using InventoryManagement.Application.Abstract;
-
-namespace InventoryManagement.Application.Components
+﻿namespace InventoryManagement.Application.Components
 {
     public abstract class InventoryComponent
     {

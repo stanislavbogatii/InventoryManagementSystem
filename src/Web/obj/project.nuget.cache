@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gOMoPZJ7bCw=",
+  "dgSpecHash": "nzhN8CBhwJA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\lab1\\InventoryManagementSystem\\src\\Web\\InventoryManagement.Web.csproj",
+  "projectFilePath": "C:\\Users\\Stanislav\\Documents\\C3S2\\TMPP\\Project\\InventoryManagementSystem\\src\\Web\\InventoryManagement.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stanislav\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Stanislav\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.2\\microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",

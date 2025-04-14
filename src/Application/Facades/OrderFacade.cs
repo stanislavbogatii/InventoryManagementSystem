@@ -1,5 +1,4 @@
-﻿using InventoryManagement.Application.Abstract;
-using InventoryManagement.Core.Builders;
+﻿using InventoryManagement.Core.Builders;
 using InventoryManagement.Core.DTOs;
 using InventoryManagement.Core.Entities;
 using InventoryManagement.Core.Enums;
@@ -17,7 +16,7 @@ namespace InventoryManagement.Application.Facades
         {
             _orderRepository = orderRepository;
             _productRepository = productRepository;
-            _logger = logger;
+            _logger = logger;   
         }
 
         public async Task<Order> CreateOrderAsync(OrderDto orderDto)
