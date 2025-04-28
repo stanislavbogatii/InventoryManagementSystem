@@ -10,3 +10,15 @@ C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Core\o
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.pdb
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Core\obj\Debug\net9.0\ref\InventoryManagement.Core.dll
 C:\Users\Stanislav\Documents\C3S2\TMPP\lab1\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.sourcelink.json
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\bin\Debug\net9.0\InventoryManagement.Core.deps.json
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\bin\Debug\net9.0\InventoryManagement.Core.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\bin\Debug\net9.0\InventoryManagement.Core.pdb
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.AssemblyInfoInputs.cache
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.AssemblyInfo.cs
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.csproj.CoreCompileInputs.cache
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.sourcelink.json
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\refint\InventoryManagement.Core.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\InventoryManagement.Core.pdb
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Core\obj\Debug\net9.0\ref\InventoryManagement.Core.dll

@@ -134,6 +134,48 @@
         }
       }
     },
+    "/{id}/enhancements": {
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EnhacementDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EnhacementDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EnhacementDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Products/{id}": {
       "get": {
         "tags": [
@@ -284,6 +326,20 @@
   },
   "components": {
     "schemas": {
+      "EnhacementDto": {
+        "type": "object",
+        "properties": {
+          "addGiftWrap": {
+            "type": "boolean"
+          },
+          "specialDiscountPercentage": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "OrderDto": {
         "type": "object",
         "properties": {
@@ -383,6 +439,36 @@
           "expirationDate": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          },
+          "properties": {
+            "$ref": "#/components/schemas/ProductProperties"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProductProperties": {
+        "type": "object",
+        "properties": {
+          "modelName": {
+            "type": "string",
+            "nullable": true
+          },
+          "weight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dimensions": {
+            "type": "string",
+            "nullable": true
+          },
+          "color": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
             "nullable": true
           }
         },

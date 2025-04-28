@@ -23,8 +23,19 @@ namespace InventoryManagement.Web.Controllers
         public async Task<IActionResult> CreateProduct([FromBody] ProductDto productDto)
         {
             var createdProduct = await _productMangementService.CreateProductAsync(productDto);
-            return Ok(MapToDto(createdProduct)); 
+            return Ok(MapToDto(createdProduct));
         }
+
+
+        [HttpPost("/{id}/enhancements")]
+        public async Task<IActionResult> ApplyEnhancements(int id, [FromBody] EnhacementDto enhacementDto)
+        {
+            var createdProduct = await _productMangementService.ApplyEnhancementsAsync(id, enhacementDto.AddGiftWrap, enhacementDto.SpecialDiscountPercentage);
+            return Ok("Saved");
+        }
+
+
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetProduct(int id)
@@ -39,6 +50,8 @@ namespace InventoryManagement.Web.Controllers
             var products = await _productMangementService.GetAllProductsAsync();
             return Ok(products);
         }
+
+
 
 
         private ProductDto MapToDto(Product product)
@@ -67,4 +80,11 @@ namespace InventoryManagement.Web.Controllers
             };
         }
     }
+}
+
+
+public class EnhacementDto
+{
+    public bool AddGiftWrap { get; set; }
+    public decimal? SpecialDiscountPercentage { get; set; }
 }

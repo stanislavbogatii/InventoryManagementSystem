@@ -3,6 +3,7 @@ using InventoryManagement.Application.Services;
 using InventoryManagement.Infrastructure;
 using InventoryManagement.Infrastructure.Abstract;
 using InventoryManagement.Infrastructure.Repositories;
+using InventoryManagement.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<InventoryDbContext>(options =>
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductManagementService, ProductService>();
 builder.Services.AddScoped<IProductStockService, ProductService>();
+builder.Services.AddScoped<IProductPropertiesRepository, ProductPropertiesRepository>();
+
 
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IOrderService, OrderService>();
@@ -21,6 +24,10 @@ builder.Services.AddScoped<IWarehouseService, WarehouseService>();
 builder.Services.AddScoped<IWarehouseRepository, WarehouseRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryComposite, CategoryService>();
+
+
+builder.Services.AddScoped<ProductPropertiesFactory>();
+
 
 
 

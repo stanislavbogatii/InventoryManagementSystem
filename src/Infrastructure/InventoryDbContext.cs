@@ -8,10 +8,10 @@ namespace InventoryManagement.Infrastructure
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
-
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Warehouse> Warehouses { get; set; }
+        public DbSet<ProductProperties> ProductProperties { get; set; } 
 
         public InventoryDbContext(DbContextOptions<InventoryDbContext> options)
             : base(options)
@@ -35,6 +35,15 @@ namespace InventoryManagement.Infrastructure
                 .HasDiscriminator<string>("ProductType")
                 .HasValue<ElectronicsProduct>("Electronics")
                 .HasValue<FoodProduct>("Food");
+
+            modelBuilder.Entity<Product>()
+                .HasOne(i => i.Properties)
+                .WithMany()
+                .HasForeignKey(i => i.ProductPropertiesId);
+
+            modelBuilder.Entity<ProductProperties>()
+                .HasIndex(p => new { p.ModelName, p.Weight, p.Dimensions, p.Color, p.Category })
+                .IsUnique();
 
             modelBuilder.Entity<OrderItem>()
                 .HasOne(oi => oi.Product)

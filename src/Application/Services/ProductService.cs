@@ -1,10 +1,10 @@
 ﻿using InventoryManagement.Application.Abstract;
-using InventoryManagement.Core.Entities;
-using InventoryManagement.Infrastructure.Abstract;
-using InventoryManagement.Core.DTOs;
 using InventoryManagement.Application.Factories;
-using Microsoft.Extensions.Logging;
+using InventoryManagement.Core.Abstract;
+using InventoryManagement.Core.DTOs;
+using InventoryManagement.Core.Entities;
 using InventoryManagement.Core.Enums;
+using InventoryManagement.Infrastructure.Abstract;
 using InventoryManagement.Infrastructure.Adapters;
 using InventoryManagement.Infrastructure.Services;
 
@@ -13,10 +13,12 @@ namespace InventoryManagement.Application.Services
     public class ProductService : IProductManagementService, IProductStockService
     {
         private readonly IProductRepository _repository;
+        private readonly ProductPropertiesFactory _factory;
         private readonly ICustomLogger _logger;
 
-        public ProductService(IProductRepository repository, ICustomLogger _customLogger)
+        public ProductService(IProductRepository repository, ICustomLogger _customLogger, ProductPropertiesFactory factory)
         {
+            _factory = factory;
             _repository = repository;
             _logger = _customLogger;
         }
@@ -29,9 +31,18 @@ namespace InventoryManagement.Application.Services
                 "Food" => new FoodProductFactory(),
                 _ => throw new ArgumentException("Invalid product type")
             };
+
+            var properties = await _factory.GetItemPropertiesAsync(
+                productDto.Properties.ModelName,
+                productDto.Properties.Weight,
+                productDto.Properties.Dimensions,
+                productDto.Properties.Color,
+                productDto.Properties.Category
+            );
+
             Product product = factory.CreateProduct(productDto);
             _logger.Log("Product created", LogType.Info);
-
+            product.Properties = properties;
             FileLogger fileLogger = new FileLogger();
             ICustomLogger fileLoggerAdapter = new FileLoggerAdapter(fileLogger);
             ICustomLogger[] loggers = { _logger, fileLoggerAdapter };
@@ -89,6 +100,48 @@ namespace InventoryManagement.Application.Services
             product.StockQuantity = newQuantity;
             product.LastUpdated = DateTime.UtcNow;
             await _repository.UpdateAsync(product);
+        }
+
+        public async Task<IProductEnhancement> ApplyEnhancementsAsync(int productId, bool addGiftWrap = false, decimal? specialDiscountPercentage = null)
+        {
+            var product = await _repository.GetByIdAsync(productId);
+            IProductEnhancement enhancedProduct = new BaseProductEnhancement(product);
+
+            if (addGiftWrap)
+            {
+                enhancedProduct = new GiftWrapEnhancement(enhancedProduct);
+            }
+
+            if (specialDiscountPercentage.HasValue)
+            {
+                enhancedProduct = new SpecialDiscountEnhancement(enhancedProduct, specialDiscountPercentage.Value);
+            }
+
+            return enhancedProduct;
+        }
+
+
+        public async Task<ProductPricing> GetProductPricingAsync(int productId, string pricingStrategyType, decimal? strategyParameter = null)
+        {
+            var product = await _repository.GetByIdAsync(productId);
+            IPricingStrategy pricingStrategy;
+
+            switch (pricingStrategyType.ToLower())
+            {
+                case "standard":
+                    pricingStrategy = new StandardPricingStrategy();
+                    break;
+                case "taxed":
+                    pricingStrategy = new TaxedPricingStrategy(strategyParameter ?? 0.20m); // Налог по умолчанию 20%
+                    break;
+                case "regional":
+                    pricingStrategy = new RegionalPricingStrategy(strategyParameter ?? 10.00m); // Корректировка по умолчанию +10
+                    break;
+                default:
+                    throw new ArgumentException($"Unknown pricing strategy: {pricingStrategyType}");
+            }
+
+            return new ProductPricing(product, pricingStrategy);
         }
     }
 }

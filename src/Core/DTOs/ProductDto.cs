@@ -1,4 +1,6 @@
-﻿namespace InventoryManagement.Core.DTOs
+﻿using InventoryManagement.Core.Entities;
+
+namespace InventoryManagement.Core.DTOs
 {
     public class ProductDto
     {
@@ -10,5 +12,6 @@
         public string ProductType { get; set; }
         public string? WarrantyPeriod { get; set; }
         public DateTime? ExpirationDate { get; set; }
+        public ProductProperties? Properties { get; set; }
     }
 }

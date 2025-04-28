@@ -1,16 +1,19 @@
 ﻿using InventoryManagement.Core.Entities;
 using InventoryManagement.Infrastructure.Abstract;
 using Microsoft.EntityFrameworkCore;
+using InventoryManagement.Infrastructure.Services;
 
 namespace InventoryManagement.Infrastructure.Repositories
 {
     public class ProductRepository : IProductRepository
     {
         private readonly InventoryDbContext _context;
+        private readonly ProductPropertiesFactory _factory;
 
-        public ProductRepository(InventoryDbContext context)
+        public ProductRepository(InventoryDbContext context, ProductPropertiesFactory factory)
         {
             _context = context;
+            _factory = factory;
         }
 
         public async Task<Product> AddAsync(Product product)
@@ -22,12 +25,16 @@ namespace InventoryManagement.Infrastructure.Repositories
 
         public async Task<Product> GetByIdAsync(int id)
         {
-            return await _context.Products.FindAsync(id);
+            return await _context.Products
+                .Include(p => p.Properties)
+                .FirstOrDefaultAsync(i => i.Id == id);
         }
 
         public async Task<List<Product>> GetAllAsync()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Products
+                .Include(p => p.Properties)
+                .ToListAsync();
         }
 
         public async Task<Product> UpdateAsync(Product product)

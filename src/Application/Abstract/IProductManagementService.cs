@@ -1,5 +1,6 @@
 ﻿using InventoryManagement.Core.Entities;
-using InventoryManagement.Core.DTOs; 
+using InventoryManagement.Core.DTOs;
+using InventoryManagement.Core.Abstract;
 
 namespace InventoryManagement.Application.Abstract
 {
@@ -9,5 +10,6 @@ namespace InventoryManagement.Application.Abstract
         Task<ProductDto> GetProductByIdAsync(int id);
         Task<List<Product>> GetAllProductsAsync();
         Task UpdateStockAsync(int productId, int newQuantity);
+        Task<IProductEnhancement> ApplyEnhancementsAsync(int productId, bool addGiftWrap = false, decimal? specialDiscountPercentage = null);
     }
 }

@@ -1,5 +1,26 @@
 [
   {
+    "ContainingType": "InventoryManagement.Web.Controllers.ProductsController",
+    "Method": "ApplyEnhancements",
+    "RelativePath": "{id}/enhancements",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "enhacementDto",
+        "Type": "EnhacementDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "InventoryManagement.Web.Controllers.CategoryController",
     "Method": "GetWarehouseByCategory",
     "RelativePath": "api/Category/warehouse/{id}",
