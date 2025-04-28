@@ -10,7 +10,7 @@ namespace InventoryManagement.Core.Entities
         }
     }
     
-    public class TaxedPricingStrategy : IPricingStrategy
+    public class TaxedPricingStrategy : StandardPricingStrategy
     {
         private readonly decimal _taxRate;
 
@@ -27,7 +27,7 @@ namespace InventoryManagement.Core.Entities
         }
     }
 
-    public class RegionalPricingStrategy : IPricingStrategy
+    public class RegionalPricingStrategy : StandardPricingStrategy
     {
         private readonly decimal _regionalAdjustment;
 

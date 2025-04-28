@@ -33,11 +33,11 @@ namespace InventoryManagement.Infrastructure.Repositories
         public async Task<List<Product>> GetAllAsync()
         {
             return await _context.Products
-                .Include(p => p.Properties)
+                //.Include(p => p.Properties)
                 .ToListAsync();
         }
 
-        public async Task<Product> UpdateAsync(Product product)
+        public async Task UpdateAsync(Product product)
         {
             var existingProduct = await _context.Products.FindAsync(product.Id);
             if (existingProduct == null)
@@ -49,8 +49,6 @@ namespace InventoryManagement.Infrastructure.Repositories
             existingProduct.LastUpdated = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();
-
-            return existingProduct;
         }
 
         public async Task<List<Product>> GetProductsByCategoryId(int categoryId)

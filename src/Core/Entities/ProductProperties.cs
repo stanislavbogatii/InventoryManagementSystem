@@ -2,6 +2,7 @@
 {
     public class ProductProperties
     {
+        public int Id { get; set; }
         public string? ModelName { get; }
         public double? Weight { get; }
         public string? Dimensions { get; }

@@ -91,7 +91,7 @@ namespace InventoryManagement.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int?>("CategoryId")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("LastUpdated")
@@ -103,6 +103,9 @@ namespace InventoryManagement.Infrastructure.Migrations
 
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
+
+                    b.Property<int?>("ProductPropertiesId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("ProductType")
                         .IsRequired()
@@ -116,11 +119,42 @@ namespace InventoryManagement.Infrastructure.Migrations
 
                     b.HasIndex("CategoryId");
 
+                    b.HasIndex("ProductPropertiesId");
+
                     b.ToTable("Products");
 
                     b.HasDiscriminator<string>("ProductType").HasValue("Product");
 
                     b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("InventoryManagement.Core.Entities.ProductProperties", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Category")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Color")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Dimensions")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ModelName")
+                        .HasColumnType("TEXT");
+
+                    b.Property<double?>("Weight")
+                        .HasColumnType("REAL");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModelName", "Weight", "Dimensions", "Color", "Category")
+                        .IsUnique();
+
+                    b.ToTable("ProductProperties");
                 });
 
             modelBuilder.Entity("InventoryManagement.Core.Entities.Warehouse", b =>
@@ -200,11 +234,15 @@ namespace InventoryManagement.Infrastructure.Migrations
                 {
                     b.HasOne("InventoryManagement.Core.Entities.Category", "Category")
                         .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CategoryId");
+
+                    b.HasOne("InventoryManagement.Core.Entities.ProductProperties", "Properties")
+                        .WithMany()
+                        .HasForeignKey("ProductPropertiesId");
 
                     b.Navigation("Category");
+
+                    b.Navigation("Properties");
                 });
 
             modelBuilder.Entity("InventoryManagement.Core.Entities.Category", b =>

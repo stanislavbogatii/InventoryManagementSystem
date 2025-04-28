@@ -450,6 +450,10 @@
       "ProductProperties": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "modelName": {
             "type": "string",
             "nullable": true

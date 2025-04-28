@@ -42,6 +42,9 @@ namespace InventoryManagement.Infrastructure
                 .HasForeignKey(i => i.ProductPropertiesId);
 
             modelBuilder.Entity<ProductProperties>()
+                .HasKey(p => p.Id);
+
+            modelBuilder.Entity<ProductProperties>()
                 .HasIndex(p => new { p.ModelName, p.Weight, p.Dimensions, p.Color, p.Category })
                 .IsUnique();
 

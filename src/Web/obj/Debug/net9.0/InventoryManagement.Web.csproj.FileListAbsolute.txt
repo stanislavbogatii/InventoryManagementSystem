@@ -306,7 +306,7 @@ C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web
 C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.InventoryManagement.Web.props
 C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.InventoryManagement.Web.props
 C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\Inventor.3826537B.Up2Date
 C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\InventoryManagement.Web.genruntimeconfig.cache
 C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\ref\InventoryManagement.Web.dll
+C:\Users\Stanislav\Documents\C3S2\TMPP\Project\InventoryManagementSystem\src\Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

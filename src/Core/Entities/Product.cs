@@ -10,20 +10,19 @@ namespace InventoryManagement.Core.Entities
         public decimal Price { get; set; }
         public int StockQuantity { get; set; }
         public DateTime LastUpdated { get; set; }
-        public int CategoryId { get; set; }
+        public int? CategoryId { get; set; }
         public Category Category { get; set; }
         public int? ProductPropertiesId { get; set; }
         public ProductProperties? Properties { get; set; }
 
 
 
-        public Product(string name, decimal price, int stockQuantity, ProductProperties properties = null)
+        public Product(string name, decimal price, int stockQuantity)
         {
             Name = name;
             Price = price;
             StockQuantity = stockQuantity;
             LastUpdated = DateTime.UtcNow;
-            Properties = properties;
         }
 
         public virtual decimal CalculateDiscount() => 0m;
@@ -32,8 +31,8 @@ namespace InventoryManagement.Core.Entities
     {
         public string WarrantyPeriod { get; set; }
 
-        public ElectronicsProduct(string name, decimal price, int stockQuantity, string warrantyPeriod, ProductProperties properties = null)
-            : base(name, price, stockQuantity, properties)
+        public ElectronicsProduct(string name, decimal price, int stockQuantity, string warrantyPeriod)
+            : base(name, price, stockQuantity)
         {
             WarrantyPeriod = warrantyPeriod;
         }
@@ -49,8 +48,8 @@ namespace InventoryManagement.Core.Entities
 
         public DateTime? ExpirationDate { get; set; }
 
-        public FoodProduct(string name, decimal price, int stockQuantity, DateTime? expirationDate, ProductProperties? properties = null)
-            : base(name, price, stockQuantity, properties)
+        public FoodProduct(string name, decimal price, int stockQuantity, DateTime? expirationDate)
+            : base(name, price, stockQuantity)
         {
             ExpirationDate = expirationDate;
         }

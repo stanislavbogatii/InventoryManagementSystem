@@ -1,12 +1,15 @@
 ﻿using InventoryManagement.Application.Abstract;
 using InventoryManagement.Application.Factories;
+using InventoryManagement.Application.Security;
 using InventoryManagement.Core.Abstract;
 using InventoryManagement.Core.DTOs;
 using InventoryManagement.Core.Entities;
 using InventoryManagement.Core.Enums;
 using InventoryManagement.Infrastructure.Abstract;
 using InventoryManagement.Infrastructure.Adapters;
+using InventoryManagement.Infrastructure.Repositories;
 using InventoryManagement.Infrastructure.Services;
+using Microsoft.Extensions.Logging;
 
 namespace InventoryManagement.Application.Services
 {
@@ -15,13 +18,28 @@ namespace InventoryManagement.Application.Services
         private readonly IProductRepository _repository;
         private readonly ProductPropertiesFactory _factory;
         private readonly ICustomLogger _logger;
+        private readonly IProductRepository _proxiedRepository;
+        private readonly ILogger<ProductAccessControlProxy> _standartLogger;
 
-        public ProductService(IProductRepository repository, ICustomLogger _customLogger, ProductPropertiesFactory factory)
+
+        public ProductService(IProductRepository repository, ICustomLogger _customLogger, ProductPropertiesFactory factory, ILogger<ProductAccessControlProxy> standartLogger)
         {
             _factory = factory;
             _repository = repository;
             _logger = _customLogger;
+            _standartLogger = standartLogger;
+
+            var currentUser = new User
+            {
+                Id = 1,
+                Username = "testAdmin",
+                Role = UserRole.Customer
+            };
+
+            _proxiedRepository = new ProductAccessControlProxy(_repository, currentUser, _standartLogger);
         }
+
+
 
         public async Task<Product> CreateProductAsync(ProductDto productDto)
         {
@@ -51,18 +69,18 @@ namespace InventoryManagement.Application.Services
             {
                 logger.Log("Product created", LogType.Info);
             }
-            return await _repository.AddAsync(product);
+            return await _proxiedRepository.AddAsync(product);
         }
 
         public async Task<ProductDto> GetProductByIdAsync(int id)
         {
-            var product = await _repository.GetByIdAsync(id);
+            var product = await _proxiedRepository.GetByIdAsync(id);
             return MapToDto(product);
         }
 
         public async Task<List<Product>> GetAllProductsAsync()
         {
-            var products = await _repository.GetAllAsync();
+            var products = await _proxiedRepository.GetAllAsync();
             return products;
         }
 
@@ -99,12 +117,12 @@ namespace InventoryManagement.Application.Services
             if (product == null) throw new Exception("Product not found");
             product.StockQuantity = newQuantity;
             product.LastUpdated = DateTime.UtcNow;
-            await _repository.UpdateAsync(product);
+            await _proxiedRepository.UpdateAsync(product);
         }
 
         public async Task<IProductEnhancement> ApplyEnhancementsAsync(int productId, bool addGiftWrap = false, decimal? specialDiscountPercentage = null)
         {
-            var product = await _repository.GetByIdAsync(productId);
+            var product = await _proxiedRepository.GetByIdAsync(productId);
             IProductEnhancement enhancedProduct = new BaseProductEnhancement(product);
 
             if (addGiftWrap)
@@ -123,7 +141,7 @@ namespace InventoryManagement.Application.Services
 
         public async Task<ProductPricing> GetProductPricingAsync(int productId, string pricingStrategyType, decimal? strategyParameter = null)
         {
-            var product = await _repository.GetByIdAsync(productId);
+            var product = await _proxiedRepository.GetByIdAsync(productId);
             IPricingStrategy pricingStrategy;
 
             switch (pricingStrategyType.ToLower())
@@ -132,10 +150,10 @@ namespace InventoryManagement.Application.Services
                     pricingStrategy = new StandardPricingStrategy();
                     break;
                 case "taxed":
-                    pricingStrategy = new TaxedPricingStrategy(strategyParameter ?? 0.20m); // Налог по умолчанию 20%
+                    pricingStrategy = new TaxedPricingStrategy(strategyParameter ?? 0.20m); 
                     break;
                 case "regional":
-                    pricingStrategy = new RegionalPricingStrategy(strategyParameter ?? 10.00m); // Корректировка по умолчанию +10
+                    pricingStrategy = new RegionalPricingStrategy(strategyParameter ?? 10.00m);
                     break;
                 default:
                     throw new ArgumentException($"Unknown pricing strategy: {pricingStrategyType}");

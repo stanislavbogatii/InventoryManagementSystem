@@ -4,7 +4,8 @@ namespace InventoryManagement.Core.Entities
 {
     public class ProductPricing
     {
-        private readonly Product _product; private IPricingStrategy _pricingStrategy;
+        private readonly Product _product; 
+        private IPricingStrategy _pricingStrategy;
 
         public ProductPricing(Product product, IPricingStrategy pricingStrategy)
         {
