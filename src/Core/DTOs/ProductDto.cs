@@ -13,5 +13,13 @@ namespace InventoryManagement.Core.DTOs
         public string? WarrantyPeriod { get; set; }
         public DateTime? ExpirationDate { get; set; }
         public ProductProperties? Properties { get; set; }
+
+
+        public ProductDto(string name, decimal price, int stockQuantity)
+        {
+            Name = name;
+            Price = price;
+            StockQuantity = stockQuantity;
+        }
     }
 }

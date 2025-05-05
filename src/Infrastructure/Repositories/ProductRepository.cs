@@ -9,6 +9,7 @@ namespace InventoryManagement.Infrastructure.Repositories
     {
         private readonly InventoryDbContext _context;
         private readonly ProductPropertiesFactory _factory;
+        //private readonly ICommandHandler<AddProductCommand> _addProductHandler;
 
         public ProductRepository(InventoryDbContext context, ProductPropertiesFactory factory)
         {

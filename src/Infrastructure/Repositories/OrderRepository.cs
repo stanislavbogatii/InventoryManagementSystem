@@ -20,6 +20,13 @@ namespace InventoryManagement.Infrastructure.Repositories
             return order;
         }
 
+        public async Task<Order> UpdateAsync(Order order)
+        {
+            _context.Orders.Update(order);
+            await _context.SaveChangesAsync();
+            return order;
+        }
+
         public async Task<Order> GetByIdAsync(int id)
         {
             return await _context.Orders

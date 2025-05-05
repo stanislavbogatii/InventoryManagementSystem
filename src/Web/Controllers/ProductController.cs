@@ -1,8 +1,10 @@
 ﻿// src/Web/Controllers/ProductsController.cs
 using InventoryManagement.Application.Abstract;
+using InventoryManagement.Application.Commands;
 using InventoryManagement.Core.DTOs;
 using InventoryManagement.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace InventoryManagement.Web.Controllers
 {
@@ -12,17 +14,23 @@ namespace InventoryManagement.Web.Controllers
     {
         private readonly IProductManagementService _productMangementService;
         private readonly IProductStockService _productStockService;
+        private readonly ICommandHandler<AddProductCommand> _addProductHandler;
 
-        public ProductsController(IProductManagementService productMangementService, IProductStockService productStockService)
+        public ProductsController(IProductManagementService productMangementService, IProductStockService productStockService, ICommandHandler<AddProductCommand> addProductHandler)
         {
             _productMangementService = productMangementService;
             _productStockService = productStockService;
+            _addProductHandler = addProductHandler;
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateProduct([FromBody] ProductDto productDto)
         {
             var createdProduct = await _productMangementService.CreateProductAsync(productDto);
+            var command = new AddProductCommand
+                (productDto.Name, productDto.Price, productDto.StockQuantity);
+  
+            await _addProductHandler.HandleAsync(command);
             return Ok(MapToDto(createdProduct));
         }
 

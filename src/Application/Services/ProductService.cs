@@ -7,7 +7,6 @@ using InventoryManagement.Core.Entities;
 using InventoryManagement.Core.Enums;
 using InventoryManagement.Infrastructure.Abstract;
 using InventoryManagement.Infrastructure.Adapters;
-using InventoryManagement.Infrastructure.Repositories;
 using InventoryManagement.Infrastructure.Services;
 using Microsoft.Extensions.Logging;
 
@@ -39,7 +38,13 @@ namespace InventoryManagement.Application.Services
             _proxiedRepository = new ProductAccessControlProxy(_repository, currentUser, _standartLogger);
         }
 
-
+        public async void DeleteProductAsync(int id)
+        {
+            var product = await _repository.GetByIdAsync(id);
+            if (product == null) throw new Exception("Product not found");
+            //await _repository.DeleteAsync(product);
+            _logger.Log("Product deleted", LogType.Info);
+        }
 
         public async Task<Product> CreateProductAsync(ProductDto productDto)
         {
@@ -69,6 +74,13 @@ namespace InventoryManagement.Application.Services
             {
                 logger.Log("Product created", LogType.Info);
             }
+
+
+            var dispatcher = new EventDispatcher();
+            dispatcher.Subscribe(new AuditLogger());
+            var newEvent = new ProductCreatedEvent(product.Name);
+            dispatcher.Dispatch(newEvent);
+
             return await _proxiedRepository.AddAsync(product);
         }
 
@@ -118,6 +130,16 @@ namespace InventoryManagement.Application.Services
             product.StockQuantity = newQuantity;
             product.LastUpdated = DateTime.UtcNow;
             await _proxiedRepository.UpdateAsync(product);
+
+
+            var emailNotifier = new LowStockNotifier(new EmailNotificationStrategy());
+            emailNotifier.NotifyLowStock(product.Name);
+
+            var telegramNotifier = new LowStockNotifier(new TelegramNotificationStrategy());
+            telegramNotifier.NotifyLowStock(product.Name);
+
+            var silentNotifier = new LowStockNotifier(new SilentLogNotificationStrategy());
+            silentNotifier.NotifyLowStock(product.Name);
         }
 
         public async Task<IProductEnhancement> ApplyEnhancementsAsync(int productId, bool addGiftWrap = false, decimal? specialDiscountPercentage = null)
@@ -150,7 +172,7 @@ namespace InventoryManagement.Application.Services
                     pricingStrategy = new StandardPricingStrategy();
                     break;
                 case "taxed":
-                    pricingStrategy = new TaxedPricingStrategy(strategyParameter ?? 0.20m); 
+                    pricingStrategy = new TaxedPricingStrategy(strategyParameter ?? 0.20m);
                     break;
                 case "regional":
                     pricingStrategy = new RegionalPricingStrategy(strategyParameter ?? 10.00m);

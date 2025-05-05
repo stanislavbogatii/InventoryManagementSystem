@@ -1,5 +1,7 @@
 ﻿// src/Web/Controllers/OrdersController.cs
 using InventoryManagement.Application.Abstract;
+using InventoryManagement.Application.Commands;
+using InventoryManagement.Application.Handlers;
 using InventoryManagement.Core.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,10 +12,28 @@ namespace InventoryManagement.Web.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IOrderService _orderService;
+        private readonly UpdateOrderShippingAddressHandler _updateHandler;
+        private readonly UndoOrderChangesHandler _undoHandler;
 
-        public OrdersController(IOrderService orderService)
+        public OrdersController(IOrderService orderService, UpdateOrderShippingAddressHandler updateHandler, UndoOrderChangesHandler undoHandler)
         {
             _orderService = orderService;
+            _updateHandler = updateHandler;
+            _undoHandler = undoHandler;
+        }
+
+        [HttpPut("{id}/address")]
+        public async Task<IActionResult> UpdateAddress(int id, [FromBody] string newAddress)
+        {
+            await _updateHandler.HandleAsync(new UpdateShippingAddressCommand { OrderId = id, NewAddress = newAddress });
+            return Ok("Updated.");
+        }
+
+        [HttpPut("{id}/undo")]
+        public async Task<IActionResult> Undo(int id)
+        {
+            await _undoHandler.HandleAsync(id);
+            return Ok("Undo complete.");
         }
 
         [HttpPost]

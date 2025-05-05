@@ -8,5 +8,7 @@ namespace InventoryManagement.Infrastructure.Abstract
         Task<Order> AddAsync(Order order);
         Task<Order> GetByIdAsync(int id);
         Task<List<Order>> GetAllAsync();
+        Task<Order> UpdateAsync(Order order);
+
     }
 }

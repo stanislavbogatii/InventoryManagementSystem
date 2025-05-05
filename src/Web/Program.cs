@@ -1,4 +1,6 @@
 using InventoryManagement.Application.Abstract;
+using InventoryManagement.Application.Commands;
+using InventoryManagement.Application.Handlers;
 using InventoryManagement.Application.Services;
 using InventoryManagement.Infrastructure;
 using InventoryManagement.Infrastructure.Abstract;
@@ -24,6 +26,9 @@ builder.Services.AddScoped<IWarehouseService, WarehouseService>();
 builder.Services.AddScoped<IWarehouseRepository, WarehouseRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryComposite, CategoryService>();
+
+builder.Services.AddScoped<IProductRepository, IProductRepository>();
+builder.Services.AddScoped<ICommandHandler<AddProductCommand>, AddProductCommandHandler>();
 
 
 builder.Services.AddScoped<ProductPropertiesFactory>();
